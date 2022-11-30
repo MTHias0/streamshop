@@ -6,6 +6,7 @@ export const environment = {
   production: false
 };
 
+export const MOVIE_URL = "https://61aa6838bfb110001773f224.mockapi.io/streamshop-test/api/v1/events";
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

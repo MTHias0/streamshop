@@ -1,0 +1,5 @@
+<div class="list">
+  <div class="cards" *ngFor="let movie of movies">
+      <app-movie-card [image]="movie.image" [title]="movie.title" [genre]="movie.genres"></app-movie-card>
+  </div>
+</div>
