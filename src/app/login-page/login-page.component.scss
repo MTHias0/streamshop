@@ -1,0 +1,66 @@
+.input-container, .cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    color: #33333366;
+    opacity: 1;
+    font-weight: bolder;
+    padding-left: 1em;
+}
+
+#nome, #email, #cell {
+    height: 56px;
+    margin: 8px;
+    width: 60%;
+    border: 1px solid #33333399;
+    border-radius: 2px;
+}
+
+#notify, #terms {
+    width: 16px;
+    border: 1px solid red;
+    border-radius: 2px;
+    margin-top: -60px;
+    opacity: 1;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    margin-left: 20%;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.notificacao {
+    margin-top: -20;
+}
+
+.terms {
+    margin-top: -40px;
+}
+
+label {
+    text-align: left;
+    font: normal normal bold 14px/93px Nunito;
+    letter-spacing: 0.28px;
+    color: #000000;
+    opacity: 1;
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 32px;
+    color: #FFFFFF;
+    background: #1E1E1E 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    margin-top: 17%;
+    cursor: pointer;
+}

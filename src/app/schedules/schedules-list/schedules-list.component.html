@@ -1,0 +1,7 @@
+<app-schedule-card
+*ngFor="let details of event"
+[name]="details.name"
+[address]="details.address"
+[addressComplement]="details.addressComplement"
+[rooms]="this.getRoomsList(details)"
+></app-schedule-card>

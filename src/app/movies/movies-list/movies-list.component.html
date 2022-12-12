@@ -1,5 +1,14 @@
+<app-search (changedSearchText)="onTextSearch($event)" class="search">
+</app-search>
+
 <div class="list">
-  <div class="cards" *ngFor="let movie of movies">
-      <app-movie-card [image]="movie.image" [title]="movie.title" [genre]="movie.genres"></app-movie-card>
+  <div class="container" *ngFor="let movie of movies">
+      <app-movie-card class="cards"
+      *ngIf="searchText === '' || movie.title.toLocaleLowerCase().includes(searchText)"
+      [movieId]="movie.id"
+      [image]="movie.image"
+      [title]="movie.title"
+      [genre]="movie.genres">
+      </app-movie-card>
   </div>
 </div>

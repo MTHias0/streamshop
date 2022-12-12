@@ -1,9 +1,8 @@
-<div class="menu">
   <div class="cards">
     <img src={{image}}/>
-      <div class="details-sub">
-        <h5>{{title}}</h5>
-        <h5>{{genre}}</h5>
+    <div class="details-container">
+        <strong class="title">{{title}}</strong>
+        <h5 class="genre">{{genre}}</h5>
+        <button (click)="this.purchase(movieId)" [routerLink]="['/schedule']" routerLinkActive="router-link-active" >COMPRAR</button>
       </div>
   </div>
-</div>
