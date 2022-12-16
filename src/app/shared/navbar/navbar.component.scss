@@ -1,5 +1,36 @@
 .all {
   background-color: #000000;
-  display: block !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   height: 56px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.logo, .logo2 {
+  display: grid;
+}
+
+.logo2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  padding: 20px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+img {
+  height: 55px;
 }

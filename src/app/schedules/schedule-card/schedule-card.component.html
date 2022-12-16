@@ -1,4 +1,26 @@
-<div class="test">NOME{{name}}</div>
-<div class="test">ADDRESS{{address}}</div>
-<div class="test">COMPLEMENTO{{addressComplement}}</div>
-<div class="test">ROOM{{rooms}}</div>
+<ul class="card-conteiner">
+
+    <li class="card">
+        <div class="conteiner">
+
+            <div class="div-top">
+                <img class="logo" src="" alt="">
+                <h3>{{name}}</h3>
+            </div>
+            <div class="div-small">
+                <small>{{address}}</small>
+                <div class="border"></div>
+            </div>
+
+            <div class="div-mid">
+                <h4 class="sala">{{rooms}} -</h4>
+                <!-- <p></p> -->
+                <span class="audio">{{types}}</span>
+            </div>
+            <div class="div-bot">
+                <button [routerLink]="['/login']" routerLinkActive="router-link-active">18:30</button>
+            </div>
+        </div>
+
+    </li>
+</ul>

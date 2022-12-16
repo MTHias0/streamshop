@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { room } from 'src/app/models/room.models';
+import { session } from 'src/app/models/seassion.model';
 
 @Component({
   selector: 'app-schedule-card',
@@ -18,6 +19,9 @@ public addressComplement: string = '';
 
 @Input()
 public rooms: any;
+
+@Input()
+public types: string[] = [];
 
   constructor() { }
 

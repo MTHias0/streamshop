@@ -7,6 +7,7 @@ import { throwError } from 'rxjs';
 })
 export class MovieHandlerService {
   public movieId: string = '';
+  public path: string = '';
 
   constructor() { }
 
@@ -16,6 +17,10 @@ export class MovieHandlerService {
 
   public getMoviedId(): string {
     return this.movieId;
+  }
+
+  public isTheFirstPage(path: string[], route: string): boolean {
+    return path[0] === route ? true : false;
   }
 
   public handleError(err: HttpErrorResponse) {

@@ -18,7 +18,6 @@ export class MoviesListComponent implements OnInit {
 
   constructor(
     private moviesListService: MoviesListService,
-    private movieService: MovieHandlerService
   ) { }
 
   public ngOnInit(): void {

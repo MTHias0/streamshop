@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common'
+import { routes } from 'src/routes.helper';
+import { MovieHandlerService } from 'src/app/services/movie-handler.service';
+
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +11,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  public actualPage: string = '';
+  public routes: string[] = routes;
+  public isThePageMovies: boolean = false;
 
-  ngOnInit(): void {
+  constructor(
+    private location: Location,
+    private movieService: MovieHandlerService
+  ) { }
+
+  async ngOnInit(): Promise<void> {
+    this.actualPage = this.location.path()
+    this.isThePageMovies = await this.movieService.isTheFirstPage(this.routes, this.actualPage);
+  }
+
+  public previusPageButton(): void {
+    this.location.back();
   }
 
 }

@@ -13,11 +13,6 @@ export class SchedulesListService {
 
   constructor(private http: HttpClient, private movieHandler: MovieHandlerService) { }
 
-  // public getMovies():Observable<movie[]>{
-  //   return this.http.get<movie[]>(`${MOVIE_URL}`).pipe(tap(data => JSON.stringify(data)),
-  //   catchError(this.handleError));
-  // }
-
   public getEvents(): Observable<event[]> {
     return this.http.get<event[]>(this.handledUrl).pipe(
       first(),

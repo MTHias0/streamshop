@@ -54,6 +54,8 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed;
+    bottom: 2%;
     justify-content: center;
     width: 60%;
     height: 32px;
@@ -61,6 +63,5 @@ button {
     background: #1E1E1E 0% 0% no-repeat padding-box;
     border-radius: 4px;
     opacity: 1;
-    margin-top: 17%;
     cursor: pointer;
 }

@@ -1,4 +1,4 @@
-export interface seassion {
+export interface session {
  price: number;
  time: string;
 }
